@@ -1,0 +1,253 @@
+/* rese */
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+:root {
+  --primary-color: #595959;
+  --secondary-color: #fb6d3a;
+  --subtitle-color: #a8a8a8;
+}
+/* base */
+.body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  min-width: 1600px;
+}
+.none {
+  display: none !important;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.container {
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* sidebar */
+.orange {
+  color: var(--secondary-color);
+}
+.resume {
+  display: flex;
+}
+.sidebar {
+  background-color: #1e2939;
+  color: #fff;
+  width: 400px;
+}
+.sidebar-photo {
+  object-fit: cover;
+  /* max-width: 370px; */
+  width: 100%;
+  max-height: 354px;
+  margin-top: 40px;
+}
+.sidebar-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  color: #ffffff;
+  margin-top: 47px;
+  margin-bottom: 8px;
+}
+.sidebar-list {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+ul li::before {
+  content: "\2022"; /* юникод точки */
+  color: var(--secondary-color); /* Менять цвет */
+  font-weight: bold; /* Менять жирность */
+  display: inline-block; /* Расстояние между точкой и текстом */
+  width: 1em; /* Задать значение расстояния */
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.about {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 100px;
+  padding-top: 102px;
+}
+
+
+.about-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 20px;
+}
+.about-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 25px;
+}
+
+.about-text {
+  color: var(--primary-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 430px;
+}
+.about-project {
+  margin-top: 40px;
+  margin-bottom: 51px;
+}
+.job {
+  margin-top: 22px;
+  
+}
+.experience-subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 11px;
+}
+.experience-list li + li {
+  margin-top: 11px;
+}
+/* EDUCATION */
+
+.education {
+  margin-top: 43px;
+}
+.education-tittle {
+}
+.education-subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--secondary-color);
+  margin-bottom: 11px;
+}
+.education-faculty {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 12px;
+}
+.education-yers {
+  color: var(--subtitle-color);
+}
+.color1 {
+  color: var(--subtitle-color);
+  margin-bottom: 8px;
+}
