@@ -129,6 +129,7 @@ legend {
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 
 /* sidebar */
@@ -181,8 +182,8 @@ ul li::before {
 }
 .about {
   font-family: "Montserrat", sans-serif;
-  padding-left: 100px;
   padding-top: 102px;
+  overflow: hidden;
 }
 
 
